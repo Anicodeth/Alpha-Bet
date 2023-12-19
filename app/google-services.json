@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "781957768364",
+    "firebase_url": "https://alphabet-68d7c-default-rtdb.firebaseio.com",
+    "project_id": "alphabet-68d7c",
+    "storage_bucket": "alphabet-68d7c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:781957768364:android:b5eb204abcaab5a360eb09",
+        "android_client_info": {
+          "package_name": "com.example.alphabet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxWESG_QB5mzVIjSiaWVRT7YHuDFHMFBk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
