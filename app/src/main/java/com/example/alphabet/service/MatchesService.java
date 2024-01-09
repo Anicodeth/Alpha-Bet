@@ -9,7 +9,7 @@ import java.net.URL;
 public class MatchesService extends AsyncTask<Void, Void, String> {
 
     @Override
-    protected String doInBackground(Void... voids) {
+    public String doInBackground(Void... voids) {
         try {
             URL url = new URL("https://odds.p.rapidapi.com/v4/sports?all=true");
             HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
