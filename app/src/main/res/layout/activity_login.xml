@@ -48,28 +48,31 @@
             android:layout_width="wrap_content"
             android:layout_height="10dp"/>
         <EditText
+            android:id = "@+id/editTextEmail"
             android:layout_width="300dp"
             android:layout_height="55dp"
             android:background="@drawable/texteditor"
             android:hint="Enter Username or Email"
-            android:textColorHint="#837E7E"/>
+            android:textColorHint="#837E7E"
+            android:textColor="@color/white"/>
         <Space
             android:layout_width="wrap_content"
             android:layout_height="10dp"/>
         <EditText
+            android:id = "@+id/editTextPassword"
             android:layout_width="300dp"
             android:layout_height="55dp"
             android:background="@drawable/texteditor"
             android:hint="Password"
             android:inputType="textPassword"
-            android:textColorHint="#837E7E"/>
+            android:textColorHint="#837E7E"
+            android:textColor="@color/white"/>
         <Space
             android:layout_width="wrap_content"
             android:layout_height="10dp"/>
         <Button
             android:layout_width="300dp"
             android:layout_height="40dp"
-            android:id="@+id/login"
             android:fontFamily="monospace"
             android:textStyle="bold"
             android:layout_gravity="left"
@@ -84,7 +87,7 @@
             android:background="@drawable/oval"
             android:text="Log in"
             android:textColor="@color/black"
-            android:id="@+id/signup"
+            android:id="@+id/login"
             />
         <Space
             android:layout_width="wrap_content"

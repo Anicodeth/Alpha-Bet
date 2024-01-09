@@ -1,5 +1,12 @@
 package com.example.alphabet.service;
 
+import static androidx.core.content.ContextCompat.startActivity;
+
+import android.content.Context;
+import android.content.Intent;
+import android.util.Log;
+
+import com.example.alphabet.view.LoginActivity;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
@@ -21,7 +28,7 @@ public class FirebaseService {
                         // User registration successful
                         String userId = mAuth.getCurrentUser().getUid();
                         // You can perform additional actions, like saving user data to the database
-                        // mDatabase.child("users").child(userId).setValue(userData);
+                         mDatabase.child("users").child(userId).setValue(email);
                     } else {
                         // User registration failed
                         Exception exception = task.getException();
@@ -31,15 +38,16 @@ public class FirebaseService {
     }
 
     public void login(String email, String password) {
+        Log.d("Here", "Here" + email + password);
+
         mAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
-                        // User login successful
                         // You can get user information using mAuth.getCurrentUser()
                     } else {
                         // User login failed
                         Exception exception = task.getException();
-                        // Handle the exception
+
                     }
                 });
     }
