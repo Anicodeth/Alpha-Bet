@@ -6,10 +6,654 @@
     tools:context=".fragment.UserProfileFragment"
     android:background="@color/white">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="730dp"
+            tools:ignore="MissingConstraints">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"/>
+                    <LinearLayout
+                        android:layout_width="400dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:background="#fd4900"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CURRENT BALANCE"
+                            android:textSize="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="960.50 birr"
+                            android:textStyle="bold"
+                            android:textSize="25dp"/>
+
+                    </LinearLayout>
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="10dp"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center">
+                        <LinearLayout
+                            android:layout_width="190dp"
+                            android:layout_height="90dp"
+                            android:background="#6A6867"
+                            android:layout_marginLeft="3dp"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Total win"
+                                android:textSize="20dp"
+                                android:textColor="@color/white"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="400.50 birr"
+                                android:textSize="25dp"
+                                android:textStyle="bold"
+                                android:textColor="#4CAF50"/>
+
+                        </LinearLayout>
+                        <Space
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content"/>
+                        <LinearLayout
+                            android:layout_width="190dp"
+                            android:layout_height="90dp"
+                            android:background="#6A6867"
+                            android:gravity="right"
+                            android:padding="10dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Total loss"
+                                android:textColor="@color/white"
+                                android:textSize="20dp"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="150.40 birr"
+                                android:textSize="25dp"
+                                android:textStyle="bold"
+                                android:textColor="#FE000C"/>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"/>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Awaiting Results"
+                        android:textSize="28dp"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"/>
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="360dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="360dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:padding="10dp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:padding="10dp">
+                                        <ImageView
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:src="@drawable/yanited"/>
+                                        <Space
+                                            android:layout_width="10dp"
+                                            android:layout_height="wrap_content"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="50dp"
+                                            android:textAlignment="center"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:textSize="18dp"
+                                            android:padding="5dp"
+                                            android:text="Manchester United"/>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:padding="10dp">
+                                        <ImageView
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:src="@drawable/spurs"/>
+                                        <Space
+                                            android:layout_width="10dp"
+                                            android:layout_height="wrap_content"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="50dp"
+                                            android:textAlignment="center"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:textSize="18dp"
+                                            android:padding="5dp"
+                                            android:text="Tottenham Hotspurs"/>
+                                    </LinearLayout>
+
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="150dp">
+                                    <View
+                                        android:layout_width="1dp"
+                                        android:layout_height="130dp"
+                                        android:padding="10dp"
+                                        android:background="#736F6F"/>
+                                    <Space
+                                        android:layout_width="15dp"
+                                        android:layout_height="wrap_content" />                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="130dp"
+                                    android:orientation="vertical"
+                                    android:gravity="center">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Sun, Jan 14"
+                                        android:textSize="20dp"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="7:30 PM"
+                                        android:textSize="20dp"/>
+                                </LinearLayout>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:padding="10dp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:padding="10dp">
+                                        <ImageView
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:src="@drawable/everton"/>
+                                        <Space
+                                            android:layout_width="10dp"
+                                            android:layout_height="wrap_content"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="50dp"
+                                            android:textAlignment="center"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:textSize="18dp"
+                                            android:padding="5dp"
+                                            android:text="Everton "/>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:padding="10dp">
+                                        <ImageView
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:src="@drawable/villa"/>
+                                        <Space
+                                            android:layout_width="10dp"
+                                            android:layout_height="wrap_content"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="50dp"
+                                            android:textAlignment="center"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:textSize="18dp"
+                                            android:padding="5dp"
+                                            android:text="Aston Villa"/>
+                                    </LinearLayout>
+
+
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="150dp">
+                                    <Space
+                                        android:layout_width="80dp"
+                                        android:layout_height="wrap_content"/>
+                                    <View
+                                        android:layout_width="1dp"
+                                        android:layout_height="130dp"
+                                        android:padding="10dp"
+                                        android:background="#736F6F"/>
+                                    <Space
+                                        android:layout_width="15dp"
+                                        android:layout_height="wrap_content" />
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="130dp"
+                                        android:orientation="vertical"
+                                        android:gravity="center">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Sun, Jan 16"
+                                            android:textSize="20dp"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="5:00 PM"
+                                            android:textSize="20dp"/>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:padding="10dp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:padding="10dp">
+                                        <ImageView
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:src="@drawable/newcastle"/>
+                                        <Space
+                                            android:layout_width="10dp"
+                                            android:layout_height="wrap_content"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="50dp"
+                                            android:textAlignment="center"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:textSize="18dp"
+                                            android:padding="5dp"
+                                            android:text="Newcastle United"/>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:padding="10dp">
+                                        <ImageView
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:src="@drawable/city"/>
+                                        <Space
+                                            android:layout_width="10dp"
+                                            android:layout_height="wrap_content"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="50dp"
+                                            android:textAlignment="center"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:textSize="18dp"
+                                            android:padding="5dp"
+                                            android:text="Manchester City"/>
+                                        <Space
+                                            android:layout_width="36dp"
+                                            android:layout_height="wrap_content"/>
+                                    </LinearLayout>
+
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="150dp">
+                                    <View
+                                        android:layout_width="1dp"
+                                        android:layout_height="130dp"
+                                        android:padding="10dp"
+                                        android:background="#736F6F"/>
+                                    <Space
+                                        android:layout_width="15dp"
+                                        android:layout_height="wrap_content" />                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="130dp"
+                                    android:orientation="vertical"
+                                    android:gravity="center">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Sun, Jan 14"
+                                        android:textSize="20dp"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="8:30 PM"
+                                        android:textSize="20dp"/>
+                                </LinearLayout>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:padding="10dp">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:padding="10dp">
+                                        <ImageView
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:src="@drawable/brighton"/>
+                                        <Space
+                                            android:layout_width="10dp"
+                                            android:layout_height="wrap_content"/>
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="50dp"
+                                            android:textAlignment="center"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:textSize="18dp"
+                                            android:padding="5dp"
+                                            android:text="Brighton Hoven Al "/>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal"
+                                        android:padding="10dp">
+
+                                        <ImageView
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:src="@drawable/wolves" />
+
+                                        <Space
+                                            android:layout_width="10dp"
+                                            android:layout_height="wrap_content" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="50dp"
+                                            android:layout_gravity="center"
+                                            android:gravity="center"
+                                            android:padding="5dp"
+                                            android:text="Wolverhampton"
+                                            android:textAlignment="center"
+                                            android:textSize="18dp" />
+                                    </LinearLayout>
+
+
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="150dp">
+                                    <View
+                                        android:layout_width="1dp"
+                                        android:layout_height="130dp"
+                                        android:padding="10dp"
+                                        android:background="#736F6F"/>
+                                    <Space
+                                        android:layout_width="15dp"
+                                        android:layout_height="wrap_content" />                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="130dp"
+                                    android:orientation="vertical"
+                                    android:gravity="center">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Mon, Jan 22"
+                                        android:textSize="20dp"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="10:45 PM"
+                                        android:textSize="20dp"/>
+                                </LinearLayout>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="28dp"
+                    android:text="Statistics"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:text="2023/24 Top Stats"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="180dp"
+                            android:layout_height="150dp"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="90dp"
+                                android:src="@drawable/h"
+                                android:background="#6CABDD"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Goals"
+                                android:textSize="20dp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="14"
+                                android:textSize="20dp"/>
+                        </LinearLayout>
+                        <Space
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content"/>
+                        <LinearLayout
+                            android:layout_width="180dp"
+                            android:layout_height="150dp"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="90dp"
+                                android:src="@drawable/ss"
+                                android:background="#C8142E"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Most Assists"
+                                android:textSize="20dp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="8"
+                                android:textSize="20dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="180dp"
+                            android:layout_height="150dp"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:src="@drawable/cc2"
+                                android:background="#6CACDE"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Goals"
+                                android:textSize="20dp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="45"
+                                android:textSize="20dp"/>
+                        </LinearLayout>
+                        <Space
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content"/>
+                        <LinearLayout
+                            android:layout_width="180dp"
+                            android:layout_height="150dp"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:src="@drawable/bb2"
+                                android:background="#005DA9"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Most Passes"
+                                android:textSize="20dp"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="12,623"
+                                android:textSize="20dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

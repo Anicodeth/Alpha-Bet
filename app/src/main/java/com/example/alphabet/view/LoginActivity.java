@@ -17,7 +17,6 @@ public class LoginActivity extends AppCompatActivity {
     private FirebaseService firebaseService;
     private EditText emailEditText;
     private EditText passwordEditText;
-
     private Button loginButton;
 
     @Override
